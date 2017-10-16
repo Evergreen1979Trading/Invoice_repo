@@ -1,0 +1,2 @@
+Version 1.0.0.31 (2015-09-25)
+ - Total GST Amount in Summary will be in four decimal places

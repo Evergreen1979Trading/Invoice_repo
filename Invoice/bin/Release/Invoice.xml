@@ -1,0 +1,144 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Invoice
+</name>
+</assembly>
+<members>
+<member name="M:Invoice.GenCode128.Code128Rendering.MakeBarcodeImage(System.String,System.Int32,System.Boolean)">
+	<summary>
+ Make an image of a Code128 barcode for a given string
+ </summary>
+	<param name="InputData">Message to be encoded</param>
+	<param name="BarWeight">Base thickness for bar width (1 or 2 works well)</param>
+	<param name="AddQuietZone">Add required horiz margins (use if output is tight)</param>
+	<returns>An Image of the Code128 barcode representing the message</returns>
+</member><member name="T:Invoice.GenCode128.Code128Rendering">
+	<summary>
+ Summary description for Code128Rendering.
+ </summary>
+</member><member name="T:Invoice.dsLabel.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Invoice.dsLabel.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Invoice.dsLabel.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Invoice.dsLabel">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="M:Invoice.GenCode128.Code128Content.#ctor(System.String)">
+	<summary>
+ Create content based on a string of ASCII data
+ </summary>
+	<param name="AsciiData">the string that should be represented</param>
+</member><member name="P:Invoice.GenCode128.Code128Content.Codes">
+	<summary>
+ Provides the Code128 code values representing the object's string
+ </summary>
+</member><member name="M:Invoice.GenCode128.Code128Content.StringToCode128(System.String)">
+	<summary>
+ Transform the string into integers representing the Code128 codes
+ necessary to represent it
+ </summary>
+	<param name="AsciiData">String to be encoded</param>
+	<returns>Code128 representation</returns>
+</member><member name="M:Invoice.GenCode128.Code128Content.GetBestStartSet(Invoice.GenCode128.Code128Code.CodeSetAllowed,Invoice.GenCode128.Code128Code.CodeSetAllowed)">
+	<summary>
+ Determines the best starting code set based on the the first two 
+ characters of the string to be encoded
+ </summary>
+	<param name="csa1">First character of input string</param>
+	<param name="csa2">Second character of input string</param>
+	<returns>The codeset determined to be best to start with</returns>
+</member><member name="T:Invoice.GenCode128.Code128Content">
+	<summary>
+ Represent the set of code values to be output into barcode form
+ </summary>
+</member><member name="M:Invoice.GenCode128.Code128Code.CodesForChar(System.Int32,System.Int32,Invoice.GenCode128.CodeSet@)">
+	<summary>
+ Get the Code128 code value(s) to represent an ASCII character, with 
+ optional look-ahead for length optimization
+ </summary>
+	<param name="CharAscii">The ASCII value of the character to translate</param>
+	<param name="LookAheadAscii">The next character in sequence (or -1 if none)</param>
+	<param name="CurrCodeSet">The current codeset, that the returned codes need to follow;
+ if the returned codes change that, then this value will be changed to reflect it</param>
+	<returns>An array of integers representing the codes that need to be output to produce the 
+ given character</returns>
+</member><member name="M:Invoice.GenCode128.Code128Code.CodesetAllowedForChar(System.Int32)">
+	<summary>
+ Tells us which codesets a given character value is allowed in
+ </summary>
+	<param name="CharAscii">ASCII value of character to look at</param>
+	<returns>Which codeset(s) can be used to represent this character</returns>
+</member><member name="M:Invoice.GenCode128.Code128Code.CharCompatibleWithCodeset(System.Int32,Invoice.GenCode128.CodeSet)">
+	<summary>
+ Determine if a character can be represented in a given codeset
+ </summary>
+	<param name="CharAscii">character to check for</param>
+	<param name="currcs">codeset context to test</param>
+	<returns>true if the codeset contains a representation for the ASCII character</returns>
+</member><member name="M:Invoice.GenCode128.Code128Code.CodeValueForChar(System.Int32)">
+	<summary>
+ Gets the integer code128 code value for a character (assuming the appropriate code set)
+ </summary>
+	<param name="CharAscii">character to convert</param>
+	<returns>code128 symbol value for the character</returns>
+</member><member name="M:Invoice.GenCode128.Code128Code.StartCodeForCodeSet(Invoice.GenCode128.CodeSet)">
+	<summary>
+ Return the appropriate START code depending on the codeset we want to be in
+ </summary>
+	<param name="cs">The codeset you want to start in</param>
+	<returns>The code128 code to start a barcode in that codeset</returns>
+</member><member name="M:Invoice.GenCode128.Code128Code.StopCode">
+	<summary>
+ Return the Code128 stop code
+ </summary>
+	<returns>the stop code</returns>
+</member><member name="T:Invoice.GenCode128.Code128Code.CodeSetAllowed">
+	<summary>
+ Indicates which code sets can represent a character -- CodeA, CodeB, or either
+ </summary>
+</member><member name="T:Invoice.GenCode128.Code128Code">
+	<summary>
+ Static tools for determining codes for individual characters in the content
+ </summary>
+</member><member name="T:Invoice.InvDataSet.DeliveryOrderDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Invoice.InvDataSet.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Invoice.InvDataSet.DeliveryOrderRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Invoice.InvDataSet.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Invoice.InvDataSet.DeliveryOrderRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Invoice.InvDataSet.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Invoice.InvDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+</members>
+</doc>

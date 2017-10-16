@@ -1,0 +1,13 @@
+D:\Tasks\Rizal\WorkStuffs\Inventory Crystal Reports2\Invoice\Invoice\bin\Release\Invoice.exe
+D:\Tasks\Rizal\WorkStuffs\Inventory Crystal Reports2\Invoice\Invoice\bin\Release\Invoice.pdb
+D:\Tasks\Rizal\WorkStuffs\Inventory Crystal Reports2\Invoice\Invoice\bin\Release\Invoice.xml
+D:\Tasks\Rizal\WorkStuffs\Inventory Crystal Reports2\Invoice\Invoice\obj\Release\ResolveAssemblyReference.cache
+D:\Tasks\Rizal\WorkStuffs\Inventory Crystal Reports2\Invoice\Invoice\obj\Release\Invoice.Form1.resources
+D:\Tasks\Rizal\WorkStuffs\Inventory Crystal Reports2\Invoice\Invoice\obj\Release\Invoice.Resources.resources
+D:\Tasks\Rizal\WorkStuffs\Inventory Crystal Reports2\Invoice\Invoice\obj\Release\Invoice.vbproj.GenerateResource.Cache
+D:\Tasks\Rizal\WorkStuffs\Inventory Crystal Reports2\Invoice\Invoice\obj\Release\Invoice.exe
+D:\Tasks\Rizal\WorkStuffs\Inventory Crystal Reports2\Invoice\Invoice\obj\Release\Invoice.xml
+D:\Tasks\Rizal\WorkStuffs\Inventory Crystal Reports2\Invoice\Invoice\obj\Release\Invoice.pdb
+D:\Invoice\Invoice\obj\Release\Invoice.exe
+D:\Invoice\Invoice\obj\Release\Invoice.xml
+D:\Invoice\Invoice\obj\Release\Invoice.pdb
