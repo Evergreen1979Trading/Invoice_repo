@@ -26,7 +26,7 @@ Public Class Form1
             If Conn.State <> ConnectionState.Closed Then
                 Conn.Close()
             End If
-            Conn = Nothing
+            Conn = Nothing_123
         End If
 
     End Sub
